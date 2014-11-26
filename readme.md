@@ -1,4 +1,4 @@
-navSLider
+navSlider
 ===================================
 ### v0.1<br />  
 ### author by So Aanyip<br />
