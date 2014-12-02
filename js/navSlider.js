@@ -1,7 +1,7 @@
 /**
  *	navSlider.js v0.1
  *	author by So Aanyip
- *  11/26 2014
+ *  11/26
  */
 (function($){
 	$.fn.extend({
