@@ -1,4 +1,4 @@
-NavSLider
+navSlider
 ===================================
 a light javascript file basing on jQuery that helps you decorate your nav bar.
 ----------------------------------- 
