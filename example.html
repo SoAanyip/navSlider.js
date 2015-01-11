@@ -9,7 +9,7 @@
 	<body>
 		<header>
 			<h1>navSlider.js</h1>
-			<h3>v0.1</h3>
+			<h3>v0.2.0</h3>
 		</header>
 		<nav>
 			<ul id="horizentalNav">
@@ -18,7 +18,7 @@
 				<li>Develop</li>
 				<li>About</li>
 			</ul>
-		</nav
+		</nav>
 		<div class="cf"></div>
 
 		<article id="introduce">
@@ -85,7 +85,7 @@
 			</p>
 		</article>
 		<article id="about">
-			<p>version:0.1</p><p>date:11/26 2014</p><p>author: So Aanyip, email: cvdura@hotmail.com
+			<p>version:0.2.0</p><p>date:1/10 2015</p><p>author: So Aanyip, email: cvdura@hotmail.com
 			</p>
 		</article>
 
@@ -97,7 +97,7 @@
 				$('header').css('height',$(window).height()+'px');
 				$('article').hide();
 				$('#introduce').show();
-				$('#horizentalNav li').click(function(){
+				$('#horizentalNav').on('click','li',function(){
 					$('article').hide();
 					$('article').eq($(this).parent().data('index')).show();
 				})
