@@ -1,8 +1,8 @@
 navSlider
 ===================================
-a light javascript file basing on jQuery that helps you decorate your nav bar.
+A light javascript file basing on jQuery that helps you decorate your nav bar.
 ----------------------------------- 
-For more, you can download zip and check the example.html
+[An example](http://soaanyip.github.io/navSlider)
 ----------------------------------- 
 ### v0.1<br />  
 ### author by So Aanyip<br />
