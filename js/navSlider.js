@@ -1,13 +1,13 @@
 /**
  *	navSlider.js v0.2.0
  *	author by So Aanyip
- *  10th Jan 2015
+ *  19th Jan 2015
  */
 (function($){
 	"use strict";
 	$.fn.extend({
-		slider: function(direct,index,speed){
-			if(this.length)	createSlider(this,direct,index,speed);
+		slider: function(direct,index,speed,color){
+			if(this.length)	createSlider(this,direct,index,speed,color);
 			return this;
 
 			/**
@@ -16,8 +16,9 @@
 			 * @param  {String} direct 滑块移动方向
 			 * @param  {number} index  滑块起始位置	
 			 * @param  {number || string} speed  滑块移动速度
+			 * @param  {string} color 滑块的颜色
 			 */
-			function createSlider($nav,direct,index,speed){
+			function createSlider($nav,direct,index,speed,color){
 				/*初始化要用的数据，检测用户输入*/
 				var $li = $nav.children('li');
 				if(direct !== 'left' && direct !== 'top') direct='left';
@@ -32,6 +33,7 @@
 					if(speed === 'fast' || speed === 'normal' || speed === 'slow') ;
 					else speed='fast';
 				}
+				if(!color) color='#ff0';
 
 				$nav.css('position','relative');
 				$nav.attr('data-index',index);
@@ -52,7 +54,8 @@
 				.css('height',getSize('height',$li.eq(index)))
 				.css('border-radius',$li.eq(index).css('border-top-left-radius'))
 				.css('position','absolute')
-				.css('z-index','-100');
+				.css('z-index','-100')
+				.css('background-color',color);
 				$slider.appendTo($nav);
 
 				/*通过点击切换data-index*/
