@@ -1,6 +1,6 @@
 /**
- *	navSlider.js v0.2.0
- *	author by So Aanyip
+ *  navSlider.js v0.2.0
+ *  author by So Aanyip
  *  19th Jan 2015
  */
 (function($){
